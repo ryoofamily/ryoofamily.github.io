@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Ryoo Family &mdash; Home</title>
-    </head>
-    
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
-    <script src="bootstrap/js/bootstrap.min.js" ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./pictures/logo/logo.png">
+    <title>Dr. Ji Hoon Ryoo</title>
+
+    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -24,216 +25,271 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
-
-
-<style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-        
-        .bg {
-            /* The image used */
-            background-image: url(pictures/la2.jpg);     
-            /* Full height */
-            height: 100%;
-            
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-size: cover;
-        }
-        .navbar {
-  width: 100%;
-  background-color: transparent;
-  overflow: auto;
-  border: 2px solid rgb(15, 37, 109);
+  </head>
+  <style>
+  .square_btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #fff;
+    background-color:#000;
+    border-radius: 2px;
+    box-shadow:0 1px 1px #fff;
+    transition: .4s;
+    width:200px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    padding-right: 20px;
+    line-height: 44px;
+    margin-left:41%;
+    margin-right:39%;
+  position: relative;
 }
-.navbarlong a {
-  float: left;
-  padding: 12px;
-  color: #383737;
-  text-decoration:solid;
-  font-size: 17px;
-  width: 20%; /* Four links of equal widths */
-  text-align: center;
+.square_btn:hover {
+    background-color:#706f6f;
+    color: white;
 }
-.navbarlong a:hover {
-  background-color: #c5c0c0;
+.class_btn {
+    background-color: transparent;
+    border:0px;
 }
-@media screen and (max-width: 500px) {
-  .navbarlong a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+.class_btn:hover {
+    background-color:#15335a;
+    color: white;
 }
-@media (min-width: 768px) {
-.navbar-brand.abs
-    {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }
-}
-
 </style>    
-<body class="bg">
-        <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center" style="background-color: rgb(15, 37, 109)">
-                <a href="/index" class="navbar-brand d-flex w-50 mr-auto">Ryoo Family</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-                    <ul class="navbar-nav w-100 justify-content-center">
-                        <li class="nav-item">
-                            <a class = "nav-link" href="index">???</a> 
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                        <li class="nav-item">
-                                <a class = "nav-link" href="http://people.virginia.edu/~jr3gv/">Dr.Ji Hoon Ryoo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class = "nav-link" href="https://www.hyunsuk-ryoo.com/onepage">Hyun Suk Ryoo</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-    <p style="padding-top:1%"></p>
-    <div class = "container">
-            <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center;color:#fff;text-shadow: 3px 3px #474545"><strong>Ryoo Family</strong></h1>
-            <h3 style="font-family: 'Molengo', Georgia, Times, serif; text-align: center;text-shadow: 3px 3px #474545;color:#fff;">Homepage</h3>
-        
-    </div>
-    <div class = "container" style="padding-top:0px;background: rgba(20, 38, 97, 0.75);">
+<script>
+    function showclass(classid) {
+        var all = document.getElementsByClassName("class")
+        for (i = 0; i < all.length; i++) {
+            if (all[i].id == classid) {
+                if (all[i].style.display=="block") {
+                    document.getElementById(classid).style.display="none";
+                }else {
+                    document.getElementById(classid).style.display="block";
+                }
+            }else {
+                all[i].style.display = "none";
+            }
+        }
+    }
+</script>
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Dr. Ji Hoon Ryoo</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+              </li>
+            <li class ="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class ="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/family">Family</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong style="text-shadow: 2px 2px #474545">Dr. Ji Hoon Ryoo</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-white" style="text-shadow: 3px px #474545"><strong>Director of Biostatistics Core in the Saban Research Institute</strong></p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About Dr. Ryoo</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 mx-auto text-center">
+            <h2 class="section-heading text-white">About</h2>
+            <hr class="light my-4"><br> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p class="text-faded mb-4" style="text-align:left;">
+                Dr. Ryoo is an Associate Professor of Research Pediatrics who joined CHLA from  August 1, 2018, and is the director of the Biostatistics Core of the Saban Research Institute. He received his PhD in Quantitative Methods from the University of Minnesota in 2010 and has worked as a faculty member at  the Research, Statistics, and Evaluation program of  the University of Virginia, prior to joining CHLA. Dr. Ryoo has also experienced in collaborations with researchers across a variety of fields i ncluding education, psychology, medicine, and nursing. As a quantitative methodologist in Biostatistics, Dr. Ryoo is primarily interested in improving current quantitative methods and implementing new applications to facilitate the answering of substantive research questions in human sciences. His current research interests include analysis of longitudinal and multilevel data, structural equation modeling, psychometrics, propensity score analysis, and meta-analysis. Dr. Ryoo and his Biostatistics Core team will be a great resource for your research development from the outset.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="card" style="background-color:transparent;border:5px solid rgba(224, 222, 217, 0.74)">
+              <img class="card-img-top" src="./pictures/jihoon.png" alt="jihoon">
+              <div class="card-body" style="text-align:left">
+                <strong class="text-white">Ji Hoon Ryoo</strong><br>
+                <strong class="text-white">Associate Professor of Research Pediatrics<br>Director of Biostatistics Core in the Saban Research Institute</strong><br>
+                <strong style="color:#990000"><i class="fa fa-map-marker" aria-hidden="true"></i> Location:</strong> <span style="color:white">Los Angeles, CA</span><br>
+                <strong style="color:#990000"><a href="mailto:hr2ee@virginia.edu"><i class="fa fa-envelope-o"></i></a> Email:</strong> <a style="color:white" href="mailto:jryoo@usc.edu">jryoo@usc.edu</a><br>
+                <strong style="color:#990000"><a href="https://curry.virginia.edu/sites/default/files/uploads/employeeCVs/Ryoo_CV_3.2016_.pdf"><i class="fa fa-download" aria-hidden="true"></i></a> Resume/CV:</strong> <a style="color:white" href="./resume_ryoo.pdf">resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-8 mx-auto text-center"><br><br>
+              <a class="btn btn-light btn-xl js-scroll-trigger text-center" href="#education">Education</a>
+            </div>
+          </div>
+      </div>
+      </section>
+
+    <section id="experience">
+         <div class="container">
             <div class="row">
-                    <div class="col-md-3 ml-auto text-center">
-                        <br>
-                      <a style="color:#fff" ><i class="fa fa-newspaper-o fa-3x mb-3 sr-contact"></i></a>
-                        <div class="row">
-                            <div class="col-md-6 ml-auto text-center">
-                                <p style="size:150%;color:#fff">
-                                    World News
-                                </p>
-                                <p>
-                                    <a href="http://www.usatoday.com/">USA Today</a>
-                                </p>
-                                <p>
-                                    <a href="http://online.wsj.com/home-page">Wall Street Journal</a>
-                                </p>
-                                <p>
-                                    <a href="http://www.nytimes.com/">NYTimes</a>
-                                </p>
-                                <p>
-                                    <a href="http://www.cnn.com">CNN</a>
-                                </p>
-                                <p>
-                                    <a href="http://www.bbc.co.uk/">BBC</a>  
-                                </p>
-                            </div>
-                            <div class="col-md-6 ml-auto text-center">
-                                <p style="size:150%;color:#fff">
-                                    한국 뉴스
-                                </p>
-                                <p>
-                                    <a href="http://www.kbs.co.kr/">KBS</a>
-                                </p>
-                                <p>
-                                    <a href="http://www.imbc.com/">MBC</a> 
-                                </p>
-                                <p>
-                                    <a href="http://www.sbs.co.kr/">SBS</a>
-                                </p>
-                                <p>
-                                    <a href="http://www.ebs.co.kr/">EBS</a> 
-                                </p>
-                                <p>
-                                    <a href="http://www.chosun.com/">Chosun</a> 
-                                </p>
-                                <p>
-                                    <a href="http://www.hani.co.kr">Hani</a>
-                                </p>
-                                <p>
-                                    <a href="http://www.koreadaily.com/index.html?branch=HOME">KoreaDaily</a>
-                                </p>
-                            </div>
-                        </div>
-                      </div>
-                    <div class="col-md-3 ml-auto text-center">
-                            <br>
-                        <a style="color:#fff" ><i class="fa fa-television fa-3x mb-3 sr-contact"></i></a>
-                        <p style="size:150%;color:#fff">
-                                한국 텔레비전
-                            </p>
-                        <p>
-                            <a href="http://www.ikoreantv.com/board.php?board=ikoreantvmain&command=skin_insert&exe=insert_iboard1_home">ikoreantv</a>
-                        </p>
-                        <p>
-                            <a href="https://linktv.co/">링크 티비</a>
-                        </p>
-                    </div>
-                    <div class="col-md-3 mr-auto text-center">
-                            <br>
-                        <a style="color:#fff" ><i class="fa fa-university fa-3x mb-3 sr-contact"></i></a>
-                        <p style="size:150%;color:#fff">
-                            은행
-                        </p>
-                        <p>
-                            <a href="https://www.wellsfargo.com/">Wells Fargo</a>
-                        </p>
-                        <p>
-                            <a href="http://www.citicards.com">Citi</a>
-                        </p>
-                        <p>
-                            <a href="https://www2.chase.com/creditcards">Chase</a>
-                        </p>
-                        <p>
-                            <a href="http://www.samsclub.com/credit">SamsClub</a>
-                        </p>
-                        <p>
-                            <a href="http://www.searscard.com">SearsCard</a>
-                        </p>
-                        <p>
-                            <a href="http://www.rewardzone.partnercardservices.com/">BestBuy</a> 
-                        </p>
-                        <p>
-                            <a href="http://home.americanexpress.com/home/mt_personal.shtml">Amex</a>
-                        </p>
-                        <p>
-                            <a href="http://www.discovercard.com/">Disc</a> 
-                        </p>
-                        <p>
-                            <a href="https://credit.kohls.com/psp/zcprod02/KC/CRM/c/RB_SELF_SERVICE.RX_LOGIN.GBL">Kohl's</a> 
-                        </p>
-                    </div>
-                    <div class="col-md-3 mr-auto text-center">
-                            <br>
-                      <a style="color:#fff" ><i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i></a>
-                      <p style="size:150%;color:#fff">
-                            Email
-                        </p>
-                        <p>
-                            <a href="http://www.daum.net/">Daum</a>
-                        </p>
-                        <p>
-                            <a href="http://www.gmail.com">Gmail</a>
-                        </p>
-                        <p>
-                            <a href="http://www.hotmail.com">Hotmail</a>
-                        </p>
-                        <p>
-                            <a href="http://www.naver.com/">Naver</a>
-                        </p>
-                        <p>
-                            <a href="http://kr.yahoo.com">Yahoo</a> 
-                        </p>
-                      </div>
+                <div class="col-lg-12 text-left">
+                    <h2 class="section-heading text-center">Experience</h2>
+                    <hr class="my-4">
+                    <span style="text-align: center;"><a href="https://curry.virginia.edu/sites/default/files/uploads/employeeCVs/Ryoo_CV_3.2016_.pdf" style="display: block; margin: 0 auto;" class="square_btn">C.V.</a></span><br><br>
+                    <h3 style="text-align: left;color:#000">Academic Experience</h3>
+                    <hr style = "max-width: none;height:1px;border-color:#990000; ">
+                    <h4 style="text-align: left;color:rgb(83, 81, 81);"><strong><img src="./pictures/rotunda.png" style ="width:50px;height:50px"> <br>University of Virginia<span style="font-size:75%"> (Research, Statistics, and Evaluation - Curry College of Education)</span></h4>
+                    <h5 style="text-align: left;color:rgb(83, 81, 81);">Faculty</h5>
+                    <ul>
+                        <li><strong>Position:</strong> <span style="color:#666565">Assistant Professor</span></li>
+                        <li><strong>Time:</strong> <span style="color:#666565">August, 2012 ~ August, 2018</span></li>
+                        <li><strong>Location:</strong> <span style="color:#666565">Charlottesville, Va</span></li>
+                        <li><strong>Website:</strong><a href="https://curry.virginia.edu/"> Curry College of Education </a> || <a href="http://www.virginia.edu/"> University of Virginia</a></li>
+                    </ul>
+                    <h4 style="text-align: left;color:rgb(83, 81, 81);"><strong><img src="./pictures/unl.png" style ="width:50px;height:50px"> <br> University of Nebraska-Lincoln<span style="font-size:75%">  (Statistics and Research Mothodology Unit - Post Doctoral Program in CYFS)</span></h4>
+                        <h5 style="text-align: left;color:rgb(83, 81, 81);">Staff</h5>
+                        <ul>
+                            <li><strong>Position:</strong> <span style="color:#666565">Post Doctoral Research Associate</span></li>
+                            <li><strong>Time:</strong> <span style="color:#666565">July, 2010 ~ July, 2012</span></li>
+                            <li><strong>Location:</strong> <span style="color:#666565">Lincoln, NE</span></li>
+                            <li><strong>Website:</strong><a href="https://curry.virginia.edu/"> Curry College of Education </a> || <a href="https://www.unl.edu/"> University of Nebraska-Lincoln</a></li>
+                            <li><strong>Information:</strong>add link here or list</li>
+                        </ul>
+                    <h4 style="text-align: left;color:rgb(83, 81, 81);"><strong><img src="./pictures/uofm.png" style ="width:50px;height:50px"> <br>University of Minnesota-Twin Cities<span style="font-size:75%"> (Quantitative Methods in Education-Ph.D. Program in Educational Psychology)</span></h4>
+                        <h5 style="text-align: left;color:rgb(83, 81, 81);">Student</h5>
+                        <ul>
+                            <li><strong>Position:</strong> <span style="color:#666565">Ph.D. program</span></li>
+                            <li><strong>Time:</strong> <span style="color:#666565">July, 2006 ~ June, 2010</span></li>
+                            <li><strong>Location:</strong> <span style="color:#666565">Minneapolis and Saint Paul, Minnesota</span></li>
+                            <li><strong>Website:</strong><a href="https://twin-cities.umn.edu/"> University of Minnesota-Twin Cities </a></li>
+                            <li><strong>Information:</strong>add link here or list</li>
+                        </ul>
+                    <h4 style="text-align: left;color:rgb(83, 81, 81);"><strong><img src="./pictures/uofm.png" style ="width:50px;height:50px"> <br>University of Minnesota-Twin Cities<span style="font-size:75%"> (Statistics - MS Program in Statistics)</span></h4>
+                        <h5 style="text-align: left;color:rgb(83, 81, 81);">Student</h5>
+                        <ul>
+                            <li><strong>Position:</strong> <span style="color:#666565">Master programs</span></li>
+                            <li><strong>Time:</strong> <span style="color:#666565">August, 1999 ~ June, 2010</span></li>
+                            <li><strong>Location:</strong> <span style="color:#666565">Minneapolis and Saint Paul, Minnesota</span></li>
+                            <li><strong>Website:</strong><a href="https://twin-cities.umn.edu/"> University of Minnesota-Twin Cities </a></li>
+                            <li><strong>Information:</strong>add link here or list</li>
+                        </ul>
+                    <h3 style="text-align: left;color:#000">Working Experience</h3>
+                    <hr style = "max-width: none;height:1px;border-color:#990000; ">
+                    <h5 style="text-align: left;color:rgb(83, 81, 81);"><strong>Teaching Staff</strong></h5>
+                    <ul>
+                        <li>Teaching Locations:</li>
+                        <ul>
+                            <li><a href="http://www.stolaf.edu/">St. Olaf College</a></li>
+                            <li><a href="http://www.inverhills.edu/">Inver Hills Community College</a></li>
+                            <li><a href="http://www.century.edu/">Century College</a></li>
+                            <li><a href="http://www.stat.umn.edu/">School of Statistics</a></li>
+                            <li><a href="http://www.math.umn.edu/">School of Mathematics</a> </li>
+                        </ul>
+                    </ul>
+                    <h5 style="text-align: left;color:rgb(83, 81, 81);"><strong>Research Staff</strong></h5>
+                    <ul>
+                        <li>Research Locations:</li>
+                        <ul>
+                            <li><a href="http://curry.virginia.edu/research/labs/robert-h.-tai-research-group">Science Education</a></li>
+                            <li><a href="statedu.htm">Statistics Education</a> - <a href="http://www.tc.umn.edu/%7Edelma001/CATALST/index.html">CATALST</a></li>
+
+                        </ul>
+                    </ul>
+                    <h5 style="text-align: left;color:rgb(83, 81, 81);"><strong>Measurement & Statistics consultant</strong></h5>
+                    <ul>
+                        <li>Consulting Services:</li>
+                        <ul>
+                            <li><a href="http://www.pdastats.com/">Professional Data Analysts, INC</a></li>
+                            <li><a href="http://www.tc.umn.edu/~orcs/">Office of Research Consultation and Services</a></li>
+                        </ul>
+                    </ul><br>
                   </div>
-    </div>
-<div class="page-footer font-small blue  small text-dark" role = "contentinfo" style="width:100%;;bottom: 0; padding-top: 1em; padding-bottom: 1em; margin-top: 10px;">
-    <div class="container text-white" style = "text-align:center"> &copy; Hyun Suk Ryoo. All rights reserved. </div>
-</div>
-</body>
+                </div>
+                <div class="col-8 mx-auto text-center"><br><br>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Contact Me!</a>
+                </div>
+              </div>
+              </div>
+    </section>
+    <section class ="bg-dark text-white" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Contact Me!</h2>
+            <hr class="my-4">
+            <p class="mb-5">If you have any opportunities or questions for me, please contact me!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 ml-auto text-center">
+            <a style="color:#fff" href="https://www.usc.edu/"><i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i></a>
+              <p>
+                <a href="https://www.usc.edu/">University of Southern California</a>
+            </p>
+            </div>
+          <div class="col-lg-3 mr-auto text-center">
+            <a style="color:#fff" href="mailto:jryoo@usc.edu"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i></a>
+            <p>
+              <a href="mailto:jryoo@usc.edu">jryoo@usc.edu</a>
+            </p>
+          </div>
+          <div class="col-lg-3 mr-auto text-center">
+            <a style="color:#fff" href="./resume_ryoo.pdf"><i class="fa fa-download fa-3x mb-3 sr-contact"></i></a>
+              <p>
+                <a href="./resume_ryoo.pdf">Resume/CV</a>
+              </p>
+            </div>
+            <div class="col-lg-3 mr-auto text-center">
+                <a style="color:#fff" href="http://www.linkedin.com/in/hyun-suk-ryoo"><i class="fa fa-linkedin-square fa-3x mb-3 sr-contact"></i></a>
+                <p>
+                  <a href="https://www.linkedin.com/in/ji-hoon-ryoo-73a804154/">Ji Hoon Ryoo (Linked in)</a>
+                </p>
+              </div>
+        </div>
+      </div>
+      <div role = "contentinfo" style="bottom: 0; padding-top: 2em; padding-bottom:0em; margin-top: 10px;">
+          <div class="container" style = "text-align:center"> &copy; Hyun Suk Ryoo. All rights reserved. </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
 </html>
